@@ -20,7 +20,8 @@ public class GoogleMTTest extends TestCore {
 
     private static final String CHINESE_CHAR_REG = "\\P{sc=Han}";
 
-    @Test
+    // Test for local development only, this test will fail in CI build process.
+    //@Test
     public void translationTest() throws Exception {
         GoogleMT g = new GoogleMT();
         Path path = Paths.get(this.getClass().getResource("/test/data/Augustin-Louis Cauchy - Wikipedia.txt").toURI());
