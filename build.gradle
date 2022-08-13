@@ -1,0 +1,62 @@
+plugins {
+    id('java')
+    id('jacoco')
+    id('checkstyle')
+    id('distribution')
+    id('maven-publish')
+    id('groovy')
+    id('org.omegat.gradle') version '1.5.7'
+}
+
+version = '1.0'
+
+omegat {
+    version = "5.7.1"
+    pluginClass = "cc.jasonchen.omegatplugin.googlemachinetranslator.GoogleMT"
+}
+
+// For Local Development ONLY
+// START --
+repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/public/'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/gradle-plugin'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/spring/'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+        }
+        mavenLocal()
+    mavenCentral()
+}
+// END --
+
+dependencies {
+    packIntoJar  'org.slf4j:slf4j-api:1.7.21'
+    implementation 'commons-io:commons-io:2.5'
+    implementation 'commons-lang:commons-lang:2.6'
+    implementation 'org.slf4j:slf4j-nop:1.7.21'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'xmlunit:xmlunit:1.6'
+    testImplementation 'org.madlonkay.supertmxmerge:supertmxmerge:2.0.1'
+}
+
+checkstyle {
+    ignoreFailures = true
+    toolVersion = '9.3'
+}
+
+
+
+distributions {
+    main {
+        contents {
+            from(jar)
+            from('README.md', 'COPYING', 'CHANGELOG.md')
+        }
+    }
+}

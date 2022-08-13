@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="customLauncherEnabled" value="true" />
+    <option name="customLauncherPath" value="C:\Dev\Lang\Scala\sbt-1.3.13\bin\sbt-launch.jar" />
+    <option name="customVMEnabled" value="true" />
+    <option name="customVMPath" value="C:/Dev/Lang/OpenJDK/jdk8u265-b01" />
+    <option name="vmParameters" value="-Xms1024m -Xmx1024m -Xss4M -XX:ReservedCodeCacheSize=128m -Dsbt.override.build.repos=true -Dsbt.repository.config=&quot;C:\\Dev\\Lang\\Scala\\sbt-1.3.13\\sbt.repo&quot;" />
+  </component>
+</project>

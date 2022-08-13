@@ -1,14 +1,13 @@
 # Change Log
-All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## Add
 
-### Add
-- foo
-- boo
++ Continuous Integration with GitHub Actions.
 
-### Changed
+## Changed
 
-### Fixed
++ User-Agents List updated, with the most common user agents.
 
-[Unreleased]: https://github.com/miurahr/omegat-plugin-skelton/compare/v0.1...HEAD
+## Fixed
+
++ None
