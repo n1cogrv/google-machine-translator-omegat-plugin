@@ -1,4 +1,6 @@
 # OmegaT plugin for integrating Google Translation
+> Machine Translator OmegaT Plugin optimized by MijazzChan
+
 
 ## Installation
 
@@ -11,6 +13,11 @@ depending on your operating system.
 The code is originally from [OmegaT - omegat-gt-without-api-key](https://sourceforge.net/projects/omegat-gt-without-api-key/).
 
 This repository contains improvements to the original project.
+
+## Future Development Roadmap
+
++ Re-write code of http client, perhaps using external lib, such as `Apache HTTPClient`, or `OkHttpClient`.
++ Customizable proxy for http request, or perhaps configurable via OmegaT configuration panel.(High **Priority**)
 
 ## Releases
 
