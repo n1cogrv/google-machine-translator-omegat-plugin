@@ -153,7 +153,7 @@ public class GoogleMT extends BaseTranslate {
 
     @Override
     protected String getPreferenceName() {
-        return "Google Machine Translator OmegaT Plugin";
+        return "allow_google_mt_plugin";
     }
 
     @Override
